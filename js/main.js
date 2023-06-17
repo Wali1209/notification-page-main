@@ -20,7 +20,7 @@ function createNotification(imageSrc, user,action,actionLink, message, postImage
   
   const notificationMainText = document.createElement('p');
   notificationMainText.classList.add('notification-main-text')
-
+  
   const notificationUser = document.createElement("strong");
   notificationUser.classList.add("notification-user");
   notificationUser.innerHTML = user;
@@ -118,7 +118,7 @@ function handleNotificationClick(){
 // Add example notifications
 const notifications = [
   {
-    image: "../assets/images/avatar-mark-webber.webp",
+    image: `${window.location.origin}/assets/images/avatar-mark-webber.webp`,
     user: "Mark Webber &nbsp&nbsp",
     action: "reacted to your recent post&nbsp&nbsp",
     actionLink: "My first tournament today!&nbsp&nbsp",
@@ -128,7 +128,7 @@ const notifications = [
     
   },
   {
-    image: "../assets/images/avatar-angela-gray.webp",
+    image: `${window.location.origin}/assets/images/avatar-angela-gray.webp`,
     user: " Angela Gray &nbsp&nbsp",
     action: "followed you &nbsp&nbsp",
     actionLink: "",
@@ -138,7 +138,7 @@ const notifications = [
     
   },
   {
-    image: "../assets/images/avatar-jacob-thompson.webp",
+    image: `${window.location.origin}/assets/images/avatar-jacob-thompson.webp`,
     user: "Jacob Thompson &nbsp&nbsp",
     action: " has joined your group &nbsp&nbsp",
     actionLink: "Chess Club&nbsp&nbsp",
@@ -147,7 +147,7 @@ const notifications = [
     time: "1day ago",
   },
   {
-    image: "../assets/images/avatar-rizky-hasanuddin.webp",
+    image: `${window.location.origin}/assets/images/avatar-rizky-hasanuddin.webp`,
     user: "Rizky Hasanuddin &nbsp&nbsp",
     action: " sent you a private message&nbsp&nbsp",
     actionLink: "",
@@ -156,16 +156,16 @@ const notifications = [
     time: "5 days ago",
   },
   {
-    image: "../assets/images/avatar-kimberly-smith.webp",
+    image: `${window.location.origin}/assets/images/avatar-kimberly-smith.webp`,
     user: "Kimberly Smith  &nbsp&nbsp",
     action: "commented on your picture&nbsp&nbsp",
     actionLink: "",
     message: "",
-    postImage: "../assets/images/image-chess.webp",
+    postImage: `${window.location.origin}assets/images/image-chess.webp`,
     time: "1 week ago",
   },
   {
-    image: "../assets/images/avatar-nathan-peterson.webp",
+    image: `${window.location.origin}/assets/images/avatar-nathan-peterson.webp`,
     user: "Nathan Peterson&nbsp&nbsp",
     action: " reacted to your recent post  rate&nbsp&nbsp",
     actionLink: "5 end-game strategies to increase your win&nbsp&nbsp",
@@ -174,7 +174,7 @@ const notifications = [
     time: "2 weeks ago",
   },
   {
-    image: "../assets/images/avatar-anna-kim.webp",
+    image: `${window.location.origin}/assets/images/avatar-anna-kim.webp`,
     user: "Anna Kim &nbsp&nbsp",
     action: "left the group &nbsp&nbsp",
     actionLink: "Chess Club&nbsp&nbsp",
@@ -192,3 +192,4 @@ notifications.forEach((notification , index) => {
 });
 
 handleNotificationClick();
+console.log( window.location.origin)
