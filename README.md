@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/Wali1209/notification-page-main)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -53,6 +53,7 @@ Users should be able to:
 
 - Some new things about Flex Box
 - Grasping JS little more
+- Learn about absolute path so images of the page can display properly on external server or CDNs
 
 ## Author
 
