@@ -161,7 +161,7 @@ const notifications = [
     action: "commented on your picture&nbsp&nbsp",
     actionLink: "",
     message: "",
-    postImage: `${window.location.origin}assets/images/image-chess.webp`,
+    postImage: `${window.location.origin}/assets/images/image-chess.webp`,
     time: "1 week ago",
   },
   {
